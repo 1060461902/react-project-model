@@ -7239,7 +7239,7 @@ if (true) {
     exports.unstable_getFirstCallbackNode = unstable_getFirstCallbackNode;
   })();
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! (webpack)/buildin/global.js */ "C:\\Users\\hg1666\\AppData\\Roaming\\npm\\node_modules\\webpack\\buildin\\global.js")))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
@@ -7275,7 +7275,7 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "C:\\Users\\hg1666\\AppData\\Roaming\\npm\\node_modules\\webpack\\buildin\\global.js":
+/***/ "./node_modules/webpack/buildin/global.js":
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
   \***********************************/
@@ -7292,7 +7292,7 @@ g = function () {
 
 try {
   // This works if eval is allowed (see CSP)
-  g = g || Function("return this")() || (1, eval)("this");
+  g = g || new Function("return this")();
 } catch (e) {
   // This works if the window reference is available
   if ((typeof window === "undefined" ? "undefined" : _typeof(window)) === "object") g = window;
