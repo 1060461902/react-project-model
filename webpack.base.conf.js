@@ -52,6 +52,21 @@ module.exports = {
                 }
             },
             {
+                test:/\.ts(x?)$/,
+                use:[{
+                    loader:'babel-loader',
+                    options:{
+                        presets: ['@babel/preset-env','@babel/preset-react'],
+                        plugins: [
+                            "@babel/plugin-proposal-class-properties",
+                            ["import", {libraryName: "antd", style: 'css'} ]
+                        ],
+                    }
+                },{
+                    loader:'ts-loader'
+                }]
+            },
+            {
                 test:/\.less$/,
                 use:ExtractTextPlugin.extract({
                     fallback:'style-loader',
