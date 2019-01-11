@@ -3,11 +3,16 @@ import * as ReactDOM from 'react-dom';
 //微软fabric react UI库
 import { PrimaryButton } from 'office-ui-fabric-react/lib/Button';
 
-class App extends React.Component<object,object> {
-    state:any;
-    props:any;
+interface Props{
+
+}
+
+class Test extends React.Component<Props,object> {
     constructor(props){
         super(props)
+        this.state = {
+
+        }
     }
 
     render(){
@@ -19,4 +24,4 @@ class App extends React.Component<object,object> {
     }
 }
 
-ReactDOM.render(<App/>,document.getElementById('app'));
+ReactDOM.render(<Test/>,document.getElementById('app'));

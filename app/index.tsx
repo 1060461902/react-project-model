@@ -6,8 +6,6 @@ interface Props{
 }
 
 class App extends React.Component<Props,object>{
-    props:Props;
-    state:any;
     constructor(props){
         super(props);
         this.state = {

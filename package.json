@@ -33,6 +33,8 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
+    "@types/react": "^16.7.18",
+    "@types/react-dom": "^16.0.11",
     "antd": "^3.12.1",
     "office-ui-fabric-react": "^6.124.1",
     "react": "^16.6.3",
