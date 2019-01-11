@@ -1,7 +1,12 @@
-import React,{Component} from 'react';
-import ReactDOM from 'react-dom';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 
-class App extends Component{
+interface Props{
+    name:string
+}
+
+class App extends React.Component<Props,object>{
+    state:object;
     constructor(props){
         super(props);
         this.state = {
@@ -12,7 +17,7 @@ class App extends Component{
     render(){
         return (
             <div>
-                <p>Hello Hot server!</p>
+                <p>Hello TS react!</p>
             </div>
         );
     }

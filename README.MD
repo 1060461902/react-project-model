@@ -8,5 +8,5 @@ npm run server //启动开发模式下热部署的webpack微型服务器 start-u
 ```
 
 ###注意 waring
-webpack配置文件是根据app文件夹**根目录**下的js类型的文件来————判定入口、生成html文件，app/\*.js与public/\*.html要一一对应
-the entrance of webpack is based on the js type file which in the folder named app(root directory). So, make sure the app/\*.js and public/\*.html are corresponding one-by-one
+webpack配置文件是根据app文件夹**根目录**下的```/\.(tsx|jsx|js)$/```类型的文件来————判定入口、生成html文件，app/\*.(tsx|jsx|js)与public/\*.html要一一对应
+the entrance of webpack is based on the ```/\.(tsx|jsx|js)$/``` type file which in the folder named app(root directory). So, make sure the app/\*.(tsx|jsx|js) and public/\*.html are corresponding one-by-one

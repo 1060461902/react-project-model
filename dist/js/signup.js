@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "27800ba124221fac2fe5";
+/******/ 	var hotCurrentHash = "920ab1f2f465d077f90d";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -788,19 +788,24 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return hotCreateRequire("./app/signup.js")(__webpack_require__.s = "./app/signup.js");
+/******/ 	return hotCreateRequire("./app/signup.tsx")(__webpack_require__.s = "./app/signup.tsx");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./app/signup.js":
-/*!***********************!*\
-  !*** ./app/signup.js ***!
-  \***********************/
+/***/ "./app/signup.tsx":
+/*!************************!*\
+  !*** ./app/signup.tsx ***!
+  \************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
 /***/ })
 

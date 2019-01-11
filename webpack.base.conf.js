@@ -4,7 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const fs = require('fs');
 
 let files = fs.readdirSync('./app');
-let jstype = /\.js$/;
+let jstype = /\.(tsx|jsx|js)$/;
 let entry = {}
 
 files.forEach(function (item,index) {
