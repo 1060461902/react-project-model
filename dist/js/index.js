@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "920ab1f2f465d077f90d";
+/******/ 	var hotCurrentHash = "eb66c1f6d37522c901b1";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -850,13 +850,16 @@ function (_super) {
   }
 
   App.prototype.render = function () {
-    return React.createElement("div", null, React.createElement("p", null, "Hello TS react!"));
+    var content = this.props.content;
+    return React.createElement("div", null, React.createElement("p", null, content));
   };
 
   return App;
 }(React.Component);
 
-ReactDOM.render(React.createElement(App, null), document.getElementById('app'));
+ReactDOM.render(React.createElement(App, {
+  content: "Hello TS react!"
+}), document.getElementById('app'));
 
 /***/ }),
 

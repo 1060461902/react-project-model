@@ -2,11 +2,12 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
 interface Props{
-    name:string
+    content:string
 }
 
 class App extends React.Component<Props,object>{
-    state:object;
+    props:Props;
+    state:any;
     constructor(props){
         super(props);
         this.state = {
@@ -15,12 +16,13 @@ class App extends React.Component<Props,object>{
     }
 
     render(){
+        const {content} = this.props;
         return (
             <div>
-                <p>Hello TS react!</p>
+                <p>{content}</p>
             </div>
         );
     }
 }
 
-ReactDOM.render(<App/>,document.getElementById('app'));
+ReactDOM.render(<App content="Hello TS react!"/>,document.getElementById('app'));
