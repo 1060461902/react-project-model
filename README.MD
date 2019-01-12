@@ -12,4 +12,4 @@ webpack配置文件是根据app文件夹**根目录**下的```/\.(tsx|jsx|js)$/`
 the entrance of webpack is based on the ```/\.(tsx|jsx|js)$/``` type file which in the folder named app(root directory). So, make sure the app/\*.(tsx|jsx|js) and public/\*.html are corresponding one-by-one
 
 ###UI库 UI library
-同时支持阿里的antd与微软的fabric，由于antd圣诞节彩蛋事件，建议使用微软的fabric
+同时支持阿里的antd与微软的fabric
